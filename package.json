@@ -1,0 +1,21 @@
+{
+  "name": "excel-analytics-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "lucide-react": "^0.525.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
