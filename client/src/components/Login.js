@@ -70,7 +70,7 @@ function Login() {
             loading ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
-          {loading ? "Logging in..." : "Login"}
+          {loading ? "Logging you in..." : "Login"}
         </button>
       </form>
     </div>
